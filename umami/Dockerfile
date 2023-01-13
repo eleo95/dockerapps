@@ -1,5 +1,4 @@
-FROM 	arm64v8/node:14-alpine
-
+FROM --platform=linux/arm64	arm64v8/node:16
 #ENV DATABASE_URL="mysql://umami:umami@db:3306/umami"
 ENV DATABASE_URL="postgresql://umami:umami@db:5432/umami"
 
